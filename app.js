@@ -25,7 +25,7 @@ document.querySelector('.form-container form').addEventListener('submit', functi
     checkNumeroIdentificacionInServer(numeroIdentificacion)
         .then(exists => {
             if (exists) {
-                showCustomAlert('Formulario no enviado. El número de identificación ya está registrado.', 'error');
+                showCustomAlert('Formulario no enviado. El líder ya está registrado.', 'error');
                 hideLoadingSpinner();
             } else {
                 const data = {};
@@ -52,7 +52,7 @@ document.querySelector('#numero_documento').addEventListener('blur', function ()
     checkNumeroIdentificacionInServer(numeroIdentificacion)
         .then(exists => {
             if (exists) {
-                showCustomAlert('Este número de identificación ya está registrado.', 'error');
+                showCustomAlert('El líder ya está registrado.', 'error');
                 this.classList.add('input-error');
             } else {
                 this.classList.remove('input-error');
