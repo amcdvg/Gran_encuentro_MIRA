@@ -281,7 +281,9 @@
 
         @media (max-width: 576px) {
             .form-container {
-                padding: 2.5rem;
+                padding: 1.5rem;
+                max-width: 500px; /* Aumentamos el ancho máximo */
+                width: 95%; /* Aumentamos el porcentaje de ancho */
             }
             
             .form-title {
@@ -290,6 +292,11 @@
             
             .header-image img {
                 max-height: 600px;
+            }
+            
+            /* Opcional: Ajustar el ancho de la línea decorativa del título */
+            .form-title::after {
+                width: 100%;
             }
         }
     </style>
