@@ -76,7 +76,7 @@ document.getElementById('inscrito_infomira').addEventListener('change', function
 
 // Función para verificar el número de identificación en el servidor
 function checkNumeroIdentificacionInServer(numeroIdentificacion) {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxnC4gtwDnUMPp6YnsuahSRyl-34Tt6RGs3peS50UNO4lOreUqI-601R65iPz2zBS7D/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyLPMnSblPcz8r91PnNTZ8L7uFx7eDLklGQ9JpGzKilVycRVZ-0ttYVgcptFsIzxRsg/exec';
     
     return fetch(`${scriptURL}?Número de identificación=${encodeURIComponent(numeroIdentificacion)}`)
         .then(response => {
@@ -94,7 +94,7 @@ function checkNumeroIdentificacionInServer(numeroIdentificacion) {
 
 // Función para enviar datos al servidor
 function sendDataToServer(data, form) {
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxnC4gtwDnUMPp6YnsuahSRyl-34Tt6RGs3peS50UNO4lOreUqI-601R65iPz2zBS7D/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyLPMnSblPcz8r91PnNTZ8L7uFx7eDLklGQ9JpGzKilVycRVZ-0ttYVgcptFsIzxRsg/exec";
     console.log(data)
     fetch(scriptURL, {
         method: 'POST',
